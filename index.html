@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Bulls & Bears</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+
+
+    <style>
+
+      .axis {
+        font: 10px sans-serif;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      .axis .domain {
+        fill: none;
+        stroke: #000;
+        stroke-opacity: .3;
+        stroke-width: 5px;
+        stroke-linecap: round;
+      }
+
+      .plot.axis path {
+        stroke-width: 2px;
+      }
+
+      .axis .halo {
+        fill: none;
+        stroke: #ddd;
+        stroke-width: 8px;
+        stroke-linecap: round;
+      }
+
+      .slider .handle {
+        fill: #fff;
+        stroke: #000;
+        stroke-opacity: .5;
+        stroke-width: 1.25px;
+        cursor: crosshair;
+      }
+
+      .yieldcurve {
+        fill: none;
+        stroke: darkgreen;
+        stroke-width: 1.5px;
+      }
+
+      </style>
+
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1><strong><a href="/">Bulls</a></strong> & Bears</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="sap500">S&P 500</a></li>
+					</ul>
+				</nav>
+
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Banner -->
+			<section id="banner-s">
+				<h2>Bulls & Bears</h2>
+				<p>Financial Analysis of U.S Capital Markets Over Time <br />
+				<!--<ul class="actions">
+					<li><a href="#" class="button special big">Get Started</a></li>
+				</ul>-->
+			</section>
+
+			<!-- One -->
+				<section id="one" class="wrapper style1">
+					<div class="container 75%">
+						<div class="row 200%">
+							<!--<div class="6u 12u$(medium)">
+								<header class="major">
+									<h2></h2>
+									<p>Sub Description</p
+								</header>
+							</div>-->
+							<div class="6u$ 12u$(medium)">
+								<p>Observing U.S. financial data from pre-recession to present day, we will be analyzing changes in the S&P 500 stock composition, changes in the Treasury yield curve, and changes in investor sentiment among prominent Twitter users in the financial community</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Two -->
+				<section id="two" class="wrapper style2 special">
+					<div class="container">
+						<!--<header class="major">
+							<h2>Fusce ultrices fringilla</h2>
+							<p>Maecenas vitae tellus feugiat eleifend</p>
+						</header>-->
+						<div class="row 150%">
+							<div class="6u 12u$(xsmall)">
+								<div class="image fit captioned">
+									<div id="TYCurve"></div>
+									<ul class="actions">
+										<li><a href="javascript:playGraph();" class="button small icon fa-play">Play</a></li>
+									</ul>
+									<h3>TY Curve</h3>
+									<p style="background-color:#ffffff">An interactive graph to chart yield curves, from 2007 until 2019, using data provided by the US Department of Treasury, to explore recent talks of recession. In March of 2019, we can see that the yield curve is inverted, which is a phenomenon not seen since 2007, just before the financial crisis.</p>
+								</div>
+
+							</div>
+							<div class="6u$ 12u$(xsmall)">
+								<div class="image fit captioned">
+									<div id="Nov_Jan_wordChart"></div>
+									<h3>Nov-Jan Word Chart</h3>
+								</div>
+							</div>
+							<div class="6u$ 12u$(xsmall)">
+								<div class="image fit captioned">
+									<div id="Jan_Mar_wordChart"></div>
+									<h3>Jan-Mar Word Chart</h3>
+								</div>
+							</div>
+						</div>
+						<!--<ul class="actions">
+							<li><a href="#" class="button special big">Nulla luctus</a></li>
+							<li><a href="#" class="button big">Sed vulputate</a></li>
+						</ul>-->
+					</div>
+				</section>
+
+			<!-- Three -->
+				<section id="three" class="wrapper style1">
+					<div class="container">
+						<header class="major special">
+							<h2>The Team</h2>
+							<p></p>
+						</header>
+						<div class="feature-grid">
+							<div class="feature">
+								<div class="image rounded"><img src="static/images/ann.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Ann Marie Zaya</h4>
+										<p>Created Line graph which iterates over the time</p>
+									</header>
+									<p></p>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="image rounded"><img src="static/images/ed.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Eduardo Landeros</h4>
+										<p>Created Line graph, and Histograms</p>
+									</header>
+									<p></p>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="image rounded"><img src="static/images/eric.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Eric Yang</h4>
+										<p>Created Server, and Database</p>
+									</header>
+									<p></p>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="image rounded"><img src="static/images/shab.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Shabareen Khan</h4>
+										<p>Created HTML</p>
+									</header>
+									<p></p>
+								</div>
+							</div>
+							<div class="feature">
+								<div class="image rounded"><img src="static/images/tracy.jpg" alt="" /></div>
+								<div class="content">
+									<header>
+										<h4>Tracy Guo</h4>
+										<p>Created Word  Cloud</p>
+									</header>
+									<p></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Four -->
+				<section id="four" class="wrapper style3 special">
+					<div class="container">
+						<header class="major">
+							<!--<h2>Aenean elementum ligula</h2>
+							<p>Feugiat sed lorem ipsum magna</p>-->
+						</header>
+						<!--<ul class="actions">
+							<li><a href="#" class="button special big">Get in touch</a></li>
+						</ul>-->
+					</div>
+				</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<!--<li><a href="#" class="icon fa-facebook"></a></li>
+						<li><a href="#" class="icon fa-twitter"></a></li>
+						<li><a href="#" class="icon fa-instagram"></a></li>-->
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/skel.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+
+		    <script src="{{ url_for('static', filename='js/treasury_yield.js') }}"></script>
+		    <script src="{{ url_for('static', filename='js/Nov_Jan_Cloud.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/Jan_Mar_Cloud.js') }}"></script>
+	</body>
+</html>

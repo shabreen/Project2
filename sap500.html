@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Bulls & Bears</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<h1><strong><a href="/	">Bulls</a></strong> & Bears</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="sap500">S&P 500</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Banner -->
+			<section id="banner-s">
+				<h2>S&P 500</h2>
+				<p>Financial Analysis of U.S Capital Markets Over Time <br />
+			</section>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<!--<header class="major special">
+						<h2>Generic</h2>
+						<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+					</header>
+
+					<a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a>
+					<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
+-->
+				</div>
+			</section>
+
+				<section id="two" class="wrapper style2 special">
+					<div class="container">
+						<!--<header class="major">
+							<h2>Fusce ultrices fringilla</h2>
+							<p>Maecenas vitae tellus feugiat eleifend</p>
+						</header>-->
+						<div class="row 150%">
+							<div class="6u$ 12u$(xsmall)">
+								<div class="image fit captioned">
+									<div id="sap500Chart1"></div>
+									<div class = "input"></div>
+									<h3>SAP 500 Chart 1</h3>
+								</div>
+							</div>
+							<div class="6u$ 12u$(xsmall)">
+								<div class="image fit captioned">
+									<div id="sap500Chart2"></div>
+									<h3>SAP 500 Chart 2</h3>
+								</div>
+							</div>
+							<div class="6u$ 12u$(xsmall)">
+								<div class="image fit captioned">
+									<div id="sap500Chart3"></div>
+									<h3>SAP 500 Chart 3</h3>
+								</div>
+							</div>
+							<div class="6u$ 12u$(xsmall)">
+								<div class="image fit captioned">
+									<div id="sap500Chart4"></div>
+									<h3>SAP 500 Chart 4</h3>
+								</div>
+							</div>
+						</div>
+						<div class="6u$ 12u$(xsmall)">
+							<div class="image fit captioned">
+								<div id="sap500Chart5"></div>
+								<h3>SAP 500 Chart 5</h3>
+							</div>
+						</div>
+						</div>
+						<!--<ul class="actions">
+							<li><a href="#" class="button special big">Nulla luctus</a></li>
+							<li><a href="#" class="button big">Sed vulputate</a></li>
+						</ul>-->
+					</div>
+				</section>
+
+				<section id="four" class="wrapper style3 special">
+					<div class="container">
+						<header class="major">
+							<!--<h2>Aenean elementum ligula</h2>
+							<p>Feugiat sed lorem ipsum magna</p>-->
+						</header>
+					</div>
+				</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<!--<li><a href="#" class="icon fa-facebook"></a></li>
+						<li><a href="#" class="icon fa-twitter"></a></li>
+						<li><a href="#" class="icon fa-instagram"></a></li>-->
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/skel.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+			<script src="{{ url_for('static', filename='js/SAP500_2.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/SAP500_ExtraFig.js') }}"></script>
+
+
+	</body>
+</html>
